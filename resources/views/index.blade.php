@@ -1524,9 +1524,11 @@
 									
 
 										<div class="text-end">
-											<button type="submit" class="btn btn-primary">Submit <i class="ph-paper-plane-tilt ms-2"></i></button>
+											<button type="submit" class="btn btn-success">Login <i class="ph-paper-plane-tilt ms-2"></i></button>
 										</div>
-										<a href="{{route('register.user')}}">If you are not registered, please sign up.</a>
+										<a href="{{route('register.form')}}">-> New user? Sign up</a>
+										<br>
+										<a href="{{route('role.form')}}">-> Add new role</a>
 									</form>
                                     
 								</div>

@@ -1528,8 +1528,8 @@
 												<select data-placeholder="Select your state" class="form-control form-control-select2" name="role" id="role">
 													<option></option>
 													<optgroup label="Development">
-														<option value="WD">Web Developer</option>
-														<option value="MAD">Mobile App Developer</option>
+														<option value="Web Dev">Web Developer</option>
+														<option value="Mobile App Dev">Mobile App Developer</option>
 													</optgroup>
 													<optgroup label="Pacific Time Zone">
 														<option value="CA">California</option>
@@ -1611,8 +1611,9 @@
 										</div> -->
 
 										<div class="text-end">
-											<button type="submit" class="btn btn-primary">Submit form <i class="ph-paper-plane-tilt ms-2"></i></button>
+											<button type="submit" class="btn btn-success">Submit <i class="ph-paper-plane-tilt ms-2"></i></button>
 										</div>
+										<a href="{{route('index')}}" class="btn btn-primary"><- Go to main page</a>
 									</form>
 								</div>
 							</div>

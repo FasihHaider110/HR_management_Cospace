@@ -16,6 +16,6 @@ class User extends Model
     public static function AddUser($data){
         
         DB::connection('mysql')->table('user')->insert($data);
-        redirect(route('index'));
+      return  redirect(route('index'));
     }
 }

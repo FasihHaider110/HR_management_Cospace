@@ -15,5 +15,7 @@ use App\Http\Controllers;
 
 Route::get('/', 'App\Http\Controllers\EmployeeController@index')->name('index');
 Route::get('/loginvalidate', 'App\Http\Controllers\EmployeeController@login_validate')->name('login.valid');
-Route::get('/register', 'App\Http\Controllers\EmployeeController@register_user')->name('register.user');
-Route::post('/add', 'App\Http\Controllers\EmployeeController@add_user')->name('user.add');
+Route::get('/register_form', 'App\Http\Controllers\EmployeeController@register_form')->name('register.form');
+Route::get('/role_form', 'App\Http\Controllers\EmployeeController@role_form')->name('role.form');
+Route::post('/add_user', 'App\Http\Controllers\EmployeeController@add_user')->name('user.add');
+Route::post('/add_role', 'App\Http\Controllers\EmployeeController@add_role')->name('role.add');

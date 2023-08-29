@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Role;
 
 class EmployeeController extends Controller
 {
@@ -15,23 +16,38 @@ class EmployeeController extends Controller
         return view('index');
     }
 
+    public function add_role(Request $request){
+
+        $data = array(
+            'role_id'        => $request->input('role_id'),
+            'name'           => $request->input('role_name'),
+          );
+    
+          Role::AddRole($data);
+          return view('index');
+    }
+
+    public function role_form(){
+        return view('role-form');
+    }
+
     public function login_validate(){
 
     }
 
-    public function register_user(){
+    public function register_form(){
         return view('reg-form');
     }
 
     public function add_user(Request $request){
        
         $data = array(
-            'user_id'        => 'E003',
+            'user_id'        => $request->input('name').rand(pow(10, 8 - 1), pow(10, 3) -1),
             'name'           => $request->input('name'),
             'email'          => $request->input('email'),
-            'role_id'        => 'Dev1',//$request->input(''),
-            //'login_id'       => $request->input(''),
-            'login_password' => $request->input('password'),
+            'role'        => $request->input('role'),
+            //'role_id'       => $request->input(''),
+            'password' => $request->input('password'),
             'status'        => 'Active',
 
             //'phone'     => $request->,
@@ -40,7 +56,6 @@ class EmployeeController extends Controller
           );
     
           User::AddUser($data);
-          
-
+          return view('index');       
     }
 }
