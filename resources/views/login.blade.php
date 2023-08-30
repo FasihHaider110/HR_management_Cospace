@@ -1,7 +1,7 @@
 <!-- Centered form -->
 <div class="card">
 						<div class="card-header">
-							<h5 class="mb-0">Add Role</h5>
+							<h5 class="mb-0">Welcome User</h5>
 						</div>
 
 						<div class="card-body">
@@ -11,31 +11,33 @@
 						<div class="card-body border-top">
 							<div class="row">
 								<div class="col-lg-8 offset-lg-2">
-									<form action="{{route('role.add')}}" method="POST">
-										@csrf
+									<form action="{{route('login.valid')}}">
+										
 										<div class="row mb-3">
-											<label class="col-lg-4 col-form-label">Add new role ID:</label>
+											<label class="col-lg-4 col-form-label">Enter your email:</label>
 											<div class="col-lg-8">
-												<input type="text" class="form-control" name="role_id" id="" placeholder="">
+												<input type="text" class="form-control" name="" id="" placeholder="">
 											</div>
 										</div>
 										
 										<div class="row mb-3">
-											<label class="col-lg-4 col-form-label">Add new role name:</label>
+											<label class="col-lg-4 col-form-label">Enter your password:</label>
 											<div class="col-lg-8">
-												<input type="text" class="form-control" name="role_name" id="" placeholder="">
+												<input type="password" class="form-control" name="" id="" placeholder="Your strong password">
 											</div>
 										</div>
 									
 
 										<div class="text-end">
-											<button type="submit" class="btn btn-success">Submit <i class="ph-paper-plane-tilt ms-2"></i></button>
+											<button type="submit" class="btn btn-success">Login <i class="ph-paper-plane-tilt ms-2"></i></button>
 										</div>
-										<a href="{{route('index')}}" class="btn btn-primary"><- Go to main page</a>
+										<a href="{{route('register.form')}}">-> New user? Sign up</a>
+										<br>
+										<a href="{{route('role.form')}}">-> Add new role</a>
 									</form>
                                     
 								</div>
 							</div>
 						</div>
 					</div>
-					<!-- /centered form -->
+					<!-- /centered form -->	

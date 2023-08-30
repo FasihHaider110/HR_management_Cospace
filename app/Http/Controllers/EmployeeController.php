@@ -13,7 +13,9 @@ class EmployeeController extends Controller
     }
 
     public function index(){
-        return view('index');
+        return view('main',[
+            'page' => 'login'
+        ]);
     }
 
     public function add_role(Request $request){
@@ -24,11 +26,16 @@ class EmployeeController extends Controller
           );
     
           Role::AddRole($data);
-          return view('index');
+          
+          return view('main',[
+            'page' => 'login'
+        ]);
     }
 
     public function role_form(){
-        return view('role-form');
+        return view('main',[
+            'page' => 'role_form'
+        ]);
     }
 
     public function login_validate(){
@@ -36,7 +43,10 @@ class EmployeeController extends Controller
     }
 
     public function register_form(){
-        return view('reg-form');
+        
+        return view('main',[
+            'page' => 'reg_form'
+        ]);
     }
 
     public function add_user(Request $request){
@@ -56,6 +66,8 @@ class EmployeeController extends Controller
           );
     
           User::AddUser($data);
-          return view('index');       
+          return view('main',[
+            'page' => 'login'
+        ]);       
     }
 }
