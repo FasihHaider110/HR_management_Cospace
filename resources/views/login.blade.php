@@ -11,19 +11,19 @@
 						<div class="card-body border-top">
 							<div class="row">
 								<div class="col-lg-8 offset-lg-2">
-									<form action="{{route('login.valid')}}">
-										
+									<form action="{{route('login.valid')}}" method="post">
+										{{ csrf_field() }}
 										<div class="row mb-3">
 											<label class="col-lg-4 col-form-label">Enter your email:</label>
 											<div class="col-lg-8">
-												<input type="text" class="form-control" name="" id="" placeholder="">
+												<input type="email" class="form-control" name="email" id="email" placeholder="">
 											</div>
 										</div>
 										
 										<div class="row mb-3">
 											<label class="col-lg-4 col-form-label">Enter your password:</label>
 											<div class="col-lg-8">
-												<input type="password" class="form-control" name="" id="" placeholder="Your strong password">
+												<input type="password" class="form-control" name="password" id="password" placeholder="Your strong password">
 											</div>
 										</div>
 									
