@@ -37,7 +37,7 @@
 	<!-- Page content -->	
 	<div class="page-content">
 
-		@if($page != 'login' or $page != 'reg_form')
+		@if($page != 'login' && $page != 'reg_form' && $page !='login_admin') 
 		@include('main_side_bar')
 		@endif
 
@@ -52,7 +52,9 @@
 
 				<!-- Content area -->
 				<div class="content">
-					@if($page == 'login')
+					@if ($page == 'login_admin')
+					@include('login_admin')
+					@elseif($page == 'login')
 					@include('login')
 					@elseif($page == 'reg_form')
 					@include('reg-form')

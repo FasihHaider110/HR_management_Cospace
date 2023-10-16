@@ -19,6 +19,12 @@ class EmployeeController extends Controller
         ]);
     }
 
+    public function login_admin(){
+        return view('main',[
+            'page' => 'login_admin'
+        ]);
+    }
+
     public function add_role(Request $request){
 
         $data = array(

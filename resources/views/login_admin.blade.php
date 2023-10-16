@@ -1,7 +1,7 @@
 <!-- Centered form -->
 <div class="card">
 						<div class="card-header" style="text-align: center;">
-							<h2 class="mb-0">Welcome User</h2>
+							<h2 class="mb-0">Welcome Admin</h2>
 						</div>
 
 						<div class="card-body">
@@ -14,9 +14,6 @@
 									<div class="row">
 										<div class="col">
 											<h2>Login</h2>
-										</div>
-										<div class="col-auto">
-											<a href="{{route('login.admin')}}">Admin Login -></a>
 										</div>
 									</div>
 
@@ -41,13 +38,6 @@
 											<button type="submit" class="btn btn-success">Login <i class="ph-paper-plane-tilt ms-2"></i></button>
 										</div>
 
-										<div class="row mt-3">
-											<div class="col">
-												<a href="{{route('register.form')}}">-> New user? Sign up</a>
-											</div>
-										</div>
-																				
-										<!-- <a href="{{route('role.form')}}">-> Add new role</a> -->
 									</form>
                                     
 								</div>

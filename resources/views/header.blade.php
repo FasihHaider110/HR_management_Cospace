@@ -4,7 +4,7 @@
 					<div class="page-header-content d-lg-flex">
 						<div class="d-flex">
 							<h4 class="page-title mb-0">
-								Form Layouts - <span class="fw-normal">Horizontal</span>
+								Qubitse - <span class="fw-normal">HR Management System</span>
 							</h4>
 
 							<a href="#page_header" class="btn btn-light align-self-center collapsed d-lg-none border-transparent rounded-pill p-0 ms-auto" data-bs-toggle="collapse">
@@ -18,8 +18,8 @@
 									<a href="#" class="d-flex align-items-center text-body lh-1 dropdown-toggle py-sm-2" data-bs-toggle="dropdown" data-bs-display="static">
 										<img src="../../../assets/images/brands/tesla.svg" class="w-32px h-32px me-2" alt="">
 										<div class="me-auto me-lg-1">
-											<div class="fs-sm text-muted mb-1">Customer</div>
-											<div class="fw-semibold">Tesla Motors Inc</div>
+											<div class="fs-sm text-muted mb-1">Employee</div>
+											<div class="fw-semibold">Qubitse</div>
 										</div>
 									</a>
 
@@ -96,8 +96,8 @@
 						<div class="d-flex">
 							<div class="breadcrumb py-2">
 								<a href="index.html" class="breadcrumb-item"><i class="ph-house"></i></a>
-								<a href="#" class="breadcrumb-item">Form layouts</a>
-								<span class="breadcrumb-item active">Horizontal</span>
+								<a href="#" class="breadcrumb-item">Main</a>
+								<span class="breadcrumb-item active">Login</span>
 							</div>
 
 							<a href="#breadcrumb_elements" class="btn btn-light align-self-center collapsed d-lg-none border-transparent rounded-pill p-0 ms-auto" data-bs-toggle="collapse">

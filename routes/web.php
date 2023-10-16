@@ -14,6 +14,7 @@ use App\Http\Controllers;
 */
 
 Route::get('/', 'App\Http\Controllers\EmployeeController@index')->name('index');
+Route::get('/admin', 'App\Http\Controllers\EmployeeController@login_admin')->name('login.admin');
 Route::get('/loginvalidate', 'App\Http\Controllers\EmployeeController@login_validate')->name('login.valid');
 Route::get('/register_form', 'App\Http\Controllers\EmployeeController@register_form')->name('register.form');
 Route::get('/role_form', 'App\Http\Controllers\EmployeeController@role_form')->name('role.form');
